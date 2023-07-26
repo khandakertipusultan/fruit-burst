@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2f91d2c4d4.js" crossorigin="anonymous"></script>
+
     <script>
         tailwind.config = {
           theme: {
@@ -32,64 +33,355 @@
 
 <body class="font-lato">
     
-    <header>
-<!-- header section added -->
+<header class="container mx-auto">
+<!-- header section start -->
 <section>
-<!-- nav bar -->
+<!-- nav bar start -->
 <nav>
-<div class="flex ">
-<div class="navbar bg-[#F85559]">
-  <div class="navbar-start">
-    
-    <div class="dropdown">
-      <!-- <label tabindex="0" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label> -->
-      <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><img src="./images/logo.png" alt=""></li>
-        <li>Fruit Burst</li>
-      </ul>
-    </div>
-    <p>Home</p>
-    <p>About us</p>
-    <p>Shop</p>
-    <p>All fruit</p>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><img src="./images/logo.png" alt=""></li>
-      <li>Fruit Burst</li>
-    </ul>
-  </div>
+<div class="flex bg-[#F85559] rounded-full mb-10 justify-between mt-10">
   <div>
-  <!-- <div class="form-control"> -->
-    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-  </div>
-</div>   
+    <ul class="flex text-white">
+      <li class="mx-5 my-7">Home</li>
+      <li class="mx-5 my-7">About Us</li>
+      <li class="mx-5 my-7">Shop</li>
+      <li class="mx-5 my-7">All Fruits</li>
+    </ul>
+  </div> 
+  <div class="flex">
+    <img src="./images/logo.png" alt="">
+    <h1 class="text-3xl font-extrabold text-white">Fruit Burst</h1>
+  </div> 
+  <div class="m-5">
+    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-3xl relative" />
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white absolute -mb-12">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+    </svg>
+    
+  </div> 
+</div>
 </nav>
+<!-- nav bar end -->
+
+
+
+<!-- exotic part start  -->
+<div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+      <p class="mb-5">We supply highly quality organic products</p>
+      <button class="btn  bg-[#F85559] text-white">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- exotic card section start -->
+<div class="flex justify-between">
+
+<div>
+  <img src="./images/fruit1.png" alt="">
+  <p>Strawberry</p>
+</div>
+
+<div>
+  <img src="./images/fruit2.png" alt="">
+  <p>Orange</p>
+</div>
+
+<div>
+  <img src="./images/fruit3.png" alt="">
+  <p>Mango</p>
+</div>
+
+<div>
+  <img src="./images/fruit4.png" alt="">
+  <p>Strawberry</p>
+</div>
+
+<div>
+  <img src="./images/fruit5.png" alt="">
+  <p>Mango</p>
+</div>
+</div>
+<!-- exotic card section end -->
+<!-- exotic part end -->
 </section>
 <!-- header section end -->
-    </header>
+</header>
 
 
-
-    <main>
-<!-- main section added -->
+<main class="container mx-auto">
+<!-- main section start -->
 <section>
+<!-- deal of the day  section start-->
+<div class=" flex justify-between">
+  <div>
+    <h1>
+      Deal of the day
+    </h1>
+    <p>
+      Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.
+    </p>
+  </div>
+  <div class="flex">
+    <div>
+      <h1>29</h1>
+      <p>Days</p>
+    </div>
+    <div>
+      <h1>15</h1>
+      <p>Hours</p>
+    </div>
+    <div>
+      <h1>25</h1>
+      <p>Minutes</p>
+    </div>
+    <div>
+      <h1>08</h1>
+      <p>Seconds</p>
+    </div>
+  </div>
+</div>
+<!-- deal of the day section end -->
+<!-- deal of the card section start -->
+
+<div class=" flex">
+  <!-- first card -->
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit6.png" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Apples</p>
+      <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <p>Details</p>
+    </div>
+  </div>
+  <!-- second card -->
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit7.png"class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Orange</p>
+      <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <p>Details</p>
+    </div>
+  </div>
+  <!-- third card -->
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit8.png" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Red Dragon</p>
+      <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <p>Details</p>
+    </div>
+  </div>
+  <!-- fourth card -->
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit9.png"class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Banana</p>
+      <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <p>Details</p>
+    </div>
+  </div>
+</div>
+<div class="justify-center items-center">
+<button class="btn bg-[#F85559]">Primary</button>
+ </div>
+<!-- deal of the card section end -->
+
+<!--meet team section start  -->
+<div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-center text-neutral-content">
+  <div class="grid grid-cols-1">
+    <div class="">
+      <h1>
+        Meet the team section
+      </h1>
+      <p>
+        Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.
+      </p>
+    </div>
+    <div class="flex space-x-14">
+      <div class="">
+        <img src="./images/member1.png" alt="">
+        <h3>Awlad Hossain</h3>
+        <p>Fruits Expert</p>
+        <!-- icon added korte hobe -->
+      </div>
+      <div class="">
+        <img src="./images/member1.png" alt="">
+        <h3>Awlad Hossain</h3>
+        <p>Fruits Expert</p>
+        <!-- icon added korte hobe -->
+      </div>
+      <div class="" >
+        <img src="./images/member1.png" alt="">
+        <h3>Awlad Hossain</h3>
+        <p>Fruits Expert</p>
+        <!-- icon added korte hobe -->
+      </div>
+      <div class="">
+        <img src="./images/member1.png" alt="">
+        <h3>Awlad Hossain</h3>
+        <p>Fruits Expert</p>
+        <!-- icon added korte hobe -->
+      </div>
+    </div>
+  </div>
+</section>
+<!--meet team section end  -->
+
+<!--why chose us start  -->
+<section>
+  <div class="  text-center">
+    <h1 class="text-3xl font-extrabold">Why Choose Us</h1>
+    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  <!-- mother div -->
+<div class="flex">
+
+<div class="flex-1">
+  
+<div class="flex gap-3">
+  <div class="">
+    <i class="fa-solid fa-person"></i>  
+  </div>
+  <div class="">
+  <h1 class="underline-offset-1">Dedicated Team</h1>
+  <p>Professional employees are there for you to pick<br> the most amazing and fresh fruits.</p>
+  </div>
+  </div>
+
+<div class="flex gap-3">
+  <div class="">
+    <i class="fa-solid fa-person"></i>  
+  </div>
+  <div class="">
+  <h1 class="underline-offset-1">Dedicated Team</h1>
+  <p>Professional employees are there for you to pick<br> the most amazing and fresh fruits.</p>
+  </div>
+</div>
+
+<div class="flex gap-3">
+  <div class="">
+    <i class="fa-solid fa-person"></i>  
+  </div>
+  <div class="">
+  <h1 class="underline-offset-1">Dedicated Team</h1>
+  <p>Professional employees are there for you to pick<br> the most amazing and fresh fruits.</p>
+  </div>
+  </div>
+</div>
+
+<div class="flex-1">
+  <img src="./images/whychoose1.png" alt="">
+</div>
+
+<div class="flex-1">
+  <div class="flex gap-3"> 
+    <div class="">
+    <h1 class="underline-offset-1">Dedicated Team</h1>
+    <p>Professional employees are there for you to pick<br> the most amazing and fresh fruits.</p>
+    </div>
+    <div class="">
+      <i class="fa-solid fa-person"></i>  
+    </div>
+    </div>
+  <div class="flex gap-3"> 
+    <div class="">
+    <h1 class="underline-offset-1">Dedicated Team</h1>
+    <p>Professional employees are there for you to pick<br> the most amazing and fresh fruits.</p>
+    </div>
+    <div class="">
+      <i class="fa-solid fa-person"></i>  
+    </div>
+    </div>
+  <div class="flex gap-3"> 
+    <div class="">
+    <h1 class="underline-offset-1">Dedicated Team</h1>
+    <p>Professional employees are there for you to pick<br> the most amazing and fresh fruits.</p>
+    </div>
+    <div class="">
+      <i class="fa-solid fa-person"></i>  
+    </div>
+    </div>
+</div>
+
+</div>
+  <!-- mother div -->
 
 </section>
+<!--why chose us end -->
+
+
 <!-- main section end -->
-    </main>
+</main>
 
 
 
 
-    <footer>
-<!-- footer section added -->
-<section>
+    <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded">
+      <div class="flex">
+        <img src="./images/logo.png" alt="">
+        <h1 class="text-3xl font-extrabold text-white">Fruit Burst</h1>
+      </div>
+      <div class="grid grid-flow-col gap-4 text-white">
+       
+      <p>About us</p> 
+       <p>Contact</p> 
+       <p>Jobs </p> 
+       <p>Press kit</p>
+      </div> 
+      <div>
+        <div class="flex gap-5">
 
-</section>
-<!-- footer section end -->
+         <img src="./images/social media icon/twitter.png" alt=""> 
+         <img src="./images/social media icon/facebook.png" alt=""> 
+         <img src="./images/social media icon/you tube.png" alt=""> 
+         <img src="./images/social media icon/linkedin.png" alt=""> 
+         <img src="./images/social media icon/instgram.png" alt=""> 
+         <img src="./images/social media icon/apple.png" alt=""> 
+       
+        </div>
+      </div> 
+      
     </footer>
 
 
