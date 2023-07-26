@@ -9,166 +9,88 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f91d2c4d4.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
 </head>
 
-<body>
-    <!-- navigation start -->
-
-    <nav>
-        <div>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Shop</li>
-            <li>All fruits</li>
-        </div>
-
-    </nav>
-
-
-    <!-- navigation end -->
-
-    <!-- header banner start -->
-
-
-    <div class="hero min-h-screen" style="background-image: url('./images/banner1.png');">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                <button class="btn btn-primary">Get Started</button>
-            </div>
-        </div>
+<body class="font-lato">
+    
+    <header>
+<!-- header section added -->
+<section>
+<!-- nav bar -->
+<nav>
+<div class="flex ">
+<div class="navbar bg-[#F85559]">
+  <div class="navbar-start">
+    
+    <div class="dropdown">
+      <!-- <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label> -->
+      <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><img src="./images/logo.png" alt=""></li>
+        <li>Fruit Burst</li>
+      </ul>
     </div>
-    <!-- Header banner end -->
-
-    <!-- card section  start-->
-
-   <section>
-
-    <!-- 1st card start -->
-    <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-            <img src="./images/fruit6.png" alt="apple" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center">
-            <h2 class="card-title">12.90$ - 18.85$</h2>
-            <div class="divider"></div>
-            <p>Apples</p>
-            <div class="card-actions">
-                <!-- rating start -->
-
-                <div class="flex flex-col">
-                    <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    </div>
-
-                    <p class="mt-6">Details</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 1st card end -->
-
-    <!-- 2nd card start -->
-    <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-            <img src="./images/fruit6.png" alt="apple" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center">
-            <h2 class="card-title">12.90$ - 18.85$</h2>
-            <div class="divider"></div>
-            <p>Apples</p>
-            <div class="card-actions">
-                <!-- rating start -->
-
-                <div class="flex flex-col">
-                    <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    </div>
-
-                    <p class="mt-6">Details</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 2nd card end -->
-
-    <!-- 3rd card start -->
-
-    <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-            <img src="./images/fruit6.png" alt="apple" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center">
-            <h2 class="card-title">12.90$ - 18.85$</h2>
-            <div class="divider"></div>
-            <p>Apples</p>
-            <div class="card-actions">
-                <!-- rating start -->
-
-                <div class="flex flex-col">
-                    <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    </div>
-
-                    <p class="mt-6">Details</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 3rd card end -->
-
-    <!-- 4th card star -->
-    <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-            <img src="./images/fruit6.png" alt="apple" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center">
-            <h2 class="card-title">12.90$ - 18.85$</h2>
-            <div class="divider"></div>
-            <p>Apples</p>
-            <div class="card-actions">
-                <!-- rating start -->
-
-                <div class="flex flex-col">
-                    <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    </div>
-
-                    <p class="mt-6">Details</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 4th card end -->
-
-   </section>
-    <!-- card section end -->
+    <p>Home</p>
+    <p>About us</p>
+    <p>Shop</p>
+    <p>All fruit</p>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><img src="./images/logo.png" alt=""></li>
+      <li>Fruit Burst</li>
+    </ul>
+  </div>
+  <div>
+  <!-- <div class="form-control"> -->
+    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+  </div>
+</div>   
+</nav>
+</section>
+<!-- header section end -->
+    </header>
 
 
 
+    <main>
+<!-- main section added -->
+<section>
+
+</section>
+<!-- main section end -->
+    </main>
+
+
+
+
+    <footer>
+<!-- footer section added -->
+<section>
+
+</section>
+<!-- footer section end -->
+    </footer>
 
 
 
